@@ -24,20 +24,20 @@
 
 
 
-// int age = 14;
-// if (age < 13)
-// {
-//     Console.WriteLine("Ребенок");
-// }else if (age < 18)
-// {
-//     Console.WriteLine("Подросток");
-// }else if (age <60)
-// {
-//     Console.WriteLine("Взрослый");
-// }else
-// {
-//     Console.WriteLine("Пенсионер");
-// }
+int age = 14;
+if (age < 13)
+{
+    Console.WriteLine("Ребенок");
+}else if (age < 18)
+{
+    Console.WriteLine("Подросток");
+}else if (age <60)
+{
+    Console.WriteLine("Взрослый");
+}else
+{
+    Console.WriteLine("Пенсионер");
+}
 
 
 
@@ -94,46 +94,46 @@
 
 
 
-Console.Write("Введите свою фамилию: ");
-string surname = Console.ReadLine()!.Trim();
+// Console.Write("Введите свою фамилию: ");
+// string surname = Console.ReadLine()!.Trim();
 
-if (string.IsNullOrEmpty(surname))
-{
-    Console.WriteLine("Фамилия не введена. Завершение работы.");
-    return;
-}
+// if (string.IsNullOrEmpty(surname))
+// {
+//     Console.WriteLine("Фамилия не введена. Завершение работы.");
+//     return;
+// }
 
-Random rnd = new(surname.GetHashCode() + DateTime.Now.DayOfYear);
+// Random rnd = new(surname.GetHashCode() + DateTime.Now.DayOfYear);
 
-var assigned = Enumerable.Range(1, 10)
-.OrderBy(_ => rnd.Next())
-.Take(2)
-.OrderBy(x => x)
-.ToList();
+// var assigned = Enumerable.Range(1, 10)
+// .OrderBy(_ => rnd.Next())
+// .Take(2)
+// .OrderBy(x => x)
+// .ToList();
 
-Console.WriteLine($"Задачи: №{assigned[0]} и №{assigned[1]}");
+// Console.WriteLine($"Задачи: №{assigned[0]} и №{assigned[1]}");
 
 
 
 //Вариант 6
-int numbr = int.Parse(Console.ReadLine());
-if (numbr < 60)
-{
-    Console.WriteLine("Неудовлетворительно");
-}
-else if (numbr < 75)
-{
-    Console.WriteLine("Удовлетворительно");
-}
-else if (numbr < 90)
-{
-    Console.WriteLine("Хорошо");
-}
-else if (numbr <= 100)
-{
-    Console.WriteLine("Отлично");
-}
-else
-{
-    Console.WriteLine("Другое");
-}
+// int numbr = int.Parse(Console.ReadLine());
+// if (numbr < 60)
+// {
+//     Console.WriteLine("Неудовлетворительно");
+// }
+// else if (numbr < 75)
+// {
+//     Console.WriteLine("Удовлетворительно");
+// }
+// else if (numbr < 90)
+// {
+//     Console.WriteLine("Хорошо");
+// }
+// else if (numbr <= 100)
+// {
+//     Console.WriteLine("Отлично");
+// }
+// else
+// {
+//     Console.WriteLine("Другое");
+// }
